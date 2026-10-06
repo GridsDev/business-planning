@@ -19,7 +19,7 @@
 
 - กำกับไว้ในไฟล์ว่า **"แก้โดย ฟ้า จาก sv · 7 ต.ค. 2569"** พร้อมเก็บ path เดิมไว้ในวงเล็บ
 - **สาเหตุ:** path เดิมชี้เครื่อง/workspace อื่น — เครื่องที่รัน session นี้คือ sv (user `devg`) · ตรวจด้วย `pwd` แล้ว
-- **ยังไม่ทำ:** ยังไม่ commit/push
+- **ยังไม่ทำ:** ยังไม่ commit/push · → **ทำแล้ว** ดูหัวข้อ "Force push ขึ้น Gitea" ด้านล่าง
 
 ### Pull GitHub ทับโปรเจกต์ — local ตาม GitHub ทัน (พี่ฆังสั่ง 00:38 ICT)
 
@@ -51,11 +51,36 @@
 - โครงสร้างไฟล์ = 7 ไฟล์แผนหลัก + `archive/` 11 ไฟล์ + `changelog/` ครบ
 - ย้อนกลับได้: `git reset --hard backup/local-before-gh-reset`
 
-**ยังไม่ทำ / ต้องตัดสินใจต่อ:**
+**ยังไม่ทำ / ต้องตัดสินใจต่อ (ตอนนั้น):**
 
-- **ไม่ได้ push ทั้ง Gitea และ GitHub** — `main` diverge กับ `origin/main` (Gitea) 8 vs 7 commits · ห้าม push ตามกติกา รอพี่ฆังสั่ง
-- **ไม่ได้แก้ remote** — GitHub ยังไม่ได้เพิ่มเป็น remote (ใช้ fetch ตรง URL) ถ้าจะให้ตั้งให้บอกได้
+- ~~**ไม่ได้ push ทั้ง Gitea และ GitHub**~~ → **แล้วเสร็จ**: force push ขึ้น Gitea แล้ว · **GitHub ไม่ได้ push** ตามกติกา
+- ~~**ไม่ได้แก้ remote**~~ → **คงเดิม** — พี่ฆังสั่ง "ไม่ต้องยุ่ง แค่ clone ลงมาทับ" · `origin` แตะได้เฉพาะ workspace
 - README สั้นลงเหลือ 59 บรรทัด — ถ้าอยากได้ส่วน USP/ตารางสถานะยืนยันกลับมา บอกได้ (ของเดิมยังอยู่ที่ branch `backup/local-before-gh-reset`)
+
+### Force push ขึ้น Gitea — `main` ตรงกันแล้ว (พี่ฆังอนุญาตข้ามกฎ #5)
+
+**คำสั่ง:** `force push` (พี่ฆังสั่ง 7 ต.ค. 2569 00:4x ICT) · **เฉพาะ Gitea เท่านั้น ห้าม push ไป GitHub**
+
+**เหตุที่ต้อง force:** `main` (8 commits จาก GitHub) diverge กับ `origin/main` (7 commits เดิม) → push ปกติถูก reject (non-fast-forward)
+
+**สิ่งที่ทำ:**
+
+| ลำดับ | คำสั่ง | ผลที่ตรวจจริง |
+|-------|--------|----------------|
+| 1 | ตรวจ `git remote -v` | มี **แค่ `origin`** → Gitea `192.168.1.200:3000/FahSai/...` · **ไม่มี remote ชื่อ `gitea`** → ถามพี่ฆังก่อน ไม่สร้างเอง · พี่ฆังตอบ "ใช้ `origin` เลย" |
+| 2 | `npm run build` | ✅ ผ่าน (6.73s) ก่อน commit |
+| 3 | `git commit` | `efca304` — `docs: แก้ path ใน CHANGELOG + บันทึก pull GitHub ทับ (ฟ้า จาก sv)` · ไฟล์เดียว `changelog/CHANGELOG.md` (+47 / −1) |
+| 4 | `git push -f origin main` | ✅ `+ 2fbc593...efca304 main -> main (forced update)` |
+| 5 | `git fetch` + ตรวจ | `HEAD` == `origin/main` == **`efca304`** · `git status -sb` = `## main...origin/main` (no divergence) |
+
+**สิ่งที่โดนทับบน Gitea:** 7 commits เดิม (head = `f93ed62 docs: แยกสินค้า 3 ชิ้น...`) — **ยังกู้ได้** จาก branch `backup/local-before-gh-reset` ที่เก็บไว้บนเครื่องนี้
+
+**ยังไม่ทำ / ข้อจำกัด:**
+
+- **ไม่ได้ push ไป GitHub** — ไม่มี remote ชี้ GitHub อยู่แล้ว · ห้ามตามกติกา
+- **ไม่ได้แก้ remote ใดๆ** — `origin` ยังชี้ Gitea เหมือนเดิม · remote แตะได้เฉพาะ workspace
+- `backup/local-before-gh-reset` ยังอยู่บนเครื่อง **local เท่านั้น** — ยังไม่ได้ push ขึ้น anywhere (รอคำสั่ง)
+- branch นี้จะถูก force ทับในอนาคตถ้า repo ถูก reset อีก → ถ้าอยากเก็บถาวรบอกได้
 
 ### สำรวจคู่แข่งรับทำเว็บ SME — เติมตลาดวง ② (พี่ฆังสั่ง + อนุมัติ)
 
