@@ -12,8 +12,8 @@
 | หัวข้อ | ค่า | แหล่งอ้างอิง |
 |--------|-----|-----------|
 | หน้าที่ | Bitcoin full node | หัวข้อเดิมของไฟล์นี้ |
-| ถูกอ้างถึงว่า LND เชื่อมต่อมาที่นี่ | ✅ | [Optiplex 7040](/Optiplex7040) — "เชื่อมต่อกับ Bitcoin Full Node บน NUC7" |
-| บทบาทในเครือข่าย | Source of blocks ให้ LND บน Optiplex 7040 | [Optiplex 7040](/Optiplex7040) |
+| ถูกอ้างถึงว่า LND เชื่อมต่อมาที่นี่ | ✅ | [Optiplex 7040](/archive/Optiplex7040) — "เชื่อมต่อกับ Bitcoin Full Node บน NUC7" |
+| บทบาทในเครือข่าย | Source of blocks ให้ LND บน Optiplex 7040 | [Optiplex 7040](/archive/Optiplex7040) |
 
 ---
 
@@ -81,10 +81,10 @@ du -sh ~/.bitcoin
 ---
 
 ## 🔗 Related Documents
-- [Optiplex 7040](/Optiplex7040) — เครื่องที่รัน LND และเชื่อมมาที่นี่
-- [Hardware Infrastructure](/hardware-infrastructure) — ภาพรวมทั้งระบบ
-- [Day 2](/day2) — บริบทสถาปัตยกรรม
-- [To-Do List](/To-do-List) — รวมรายการสำรองข้อมูล
+- [Optiplex 7040](/archive/Optiplex7040) — เครื่องที่รัน LND และเชื่อมมาที่นี่
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — ภาพรวมทั้งระบบ
+- [Day 2](/archive/day2) — บริบทสถาปัตยกรรม
+- [To-Do List](/archive/To-do-List) — รวมรายการสำรองข้อมูล
 
 ---
 

@@ -152,7 +152,7 @@ admin.directory.*.readonly · apps.licensing · apps.order
 ## 🔗 Related Documents
 - [Automation Scripts](/gws-automation) — สคริปต์ที่ทำงานอยู่
 - [Decisions Log](/decisions-log) — นโยบาย Google-First
-- [Operations Runbook](/operations-runbook) — ตารางงานอัตโนมัติ
+- [Operations Runbook](/archive/operations-runbook) — ตารางงานอัตโนมัติ
 - [Company Profile](/company-profile)
 
 ---

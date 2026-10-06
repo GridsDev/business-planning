@@ -295,7 +295,7 @@ function dominickPrice(fxRate: number) {
 - [Company Profile](/company-profile) — ข้อมูลบริษัท
 - [Business Rules](/business-rules) — กฎภาษีและบัญชี
 - [Decisions Log](/decisions-log) — บันทึกการตัดสินใจด้านราคา
-- [Operations Runbook](/operations-runbook) — ขั้นตอนการออกบิล
+- [Operations Runbook](/archive/operations-runbook) — ขั้นตอนการออกบิล
 
 ---
 

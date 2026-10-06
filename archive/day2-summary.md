@@ -4,8 +4,8 @@
 > ⚠️ **คนละโปรเจกต์กับ Micro-Account** — เป็น Lightning/IoT stack
 > 🔴 สรุปนี้เป็น **"สิ่งที่คุยกันไว้"** ไม่ใช่หลักฐานว่าทำเสร็จ
 
-> 📌 ดูรายละเอียดเชิงเทคนิคที่จัดระเบียบแล้วที่ [Day 2](/day2)
-> และ [Hardware Infrastructure](/hardware-infrastructure) สำหรับสถานะจริง
+> 📌 ดูรายละเอียดเชิงเทคนิคที่จัดระเบียบแล้วที่ [Day 2](/archive/day2)
+> และ [Hardware Infrastructure](/archive/hardware-infrastructure) สำหรับสถานะจริง
 
 ---
 
@@ -133,11 +133,11 @@
 ---
 
 ## 🔗 Related Documents
-- [Day 1](/day1) — บันทึกก่อนหน้า
-- [Day 2 (แบบเต็ม)](/day2) — รายละเอียดเชิงเทคนิค
-- [Hardware Infrastructure](/hardware-infrastructure) — สถานะจริง
-- [Security & Auth](/add-security_system)
-- [To-Do List](/To-do-List)
+- [Day 1](/archive/day1) — บันทึกก่อนหน้า
+- [Day 2 (แบบเต็ม)](/archive/day2) — รายละเอียดเชิงเทคนิค
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — สถานะจริง
+- [Security & Auth](/archive/add-security_system)
+- [To-Do List](/archive/To-do-List)
 
 ---
 

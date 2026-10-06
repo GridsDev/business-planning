@@ -3,76 +3,80 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'th-TH',
   title: 'Microtronic Business Planning',
-  description: 'เอกสารวางแผนธุรกิจและเทคนิคของบริษัท ไมโครทรอนิกส์ (ไทยแลนด์) จำกัด — Google Workspace/Microsoft/Adobe Partner, Micro-Account, IT Consulting',
+  description: 'เอกสารแผนธุรกิจของบริษัท ไมโครทรอนิก (ไทยแลนด์) จำกัด — โปรไฟล์ ตลาด สินค้า ราคา แผนส่งเสียง 12 สัปดาห์',
   rewrites: (srcPath: string) =>
     srcPath.replace(/(^|\/)README\.md$/, '$1index.md'),
   themeConfig: {
     nav: [
       { text: 'หน้าแรก', link: '/' },
-      { text: 'บริษัท', link: '/company-profile' },
-      { text: 'ผลิตภัณฑ์', link: '/product-catalog' },
-      { text: 'ราคากลยุทธ์', link: '/pricing-strategy' },
-      { text: 'ฮาร์ดแวร์/Node', link: '/hardware-infrastructure' },
-      { text: 'Google Workspace', link: '/google-workspace-usage' },
-    ],
-    sidebar: [
       {
-        text: 'ภาพรวมธุรกิจ',
+        text: 'แผนธุรกิจ',
         items: [
-          { text: 'โปรไฟล์บริษัท', link: '/company-profile' },
+          { text: '1 · โปรไฟล์บริษัท', link: '/1-company-profile' },
+          { text: '2 · Business Model Canvas', link: '/2-business-model-canvas' },
+          { text: '3 · ตลาดและคู่แข่ง', link: '/3-market-competitor' },
+          { text: '4 · สินค้าและราคา', link: '/4-products-pricing' },
+          { text: '5 · แผนส่งเสียง (Visibility)', link: '/5-visibility-plan' },
+          { text: '6 · Roadmap 12 สัปดาห์', link: '/6-roadmap-12-weeks' },
+          { text: '7 · Action Calendar', link: '/7-action-calendar' },
+        ]
+      },
+      {
+        text: 'เอกสารอ้างอิง',
+        items: [
+          { text: 'โปรไฟล์ (ฉบับเต็ม)', link: '/company-profile' },
           { text: 'แคตตาล็อกผลิตภัณฑ์', link: '/product-catalog' },
           { text: 'กลยุทธ์ราคา', link: '/pricing-strategy' },
           { text: 'วิเคราะห์คู่แข่ง', link: '/competitor-analysis' },
         ]
       },
+      { text: 'Google Workspace', link: '/google-workspace-usage' },
+    ],
+    sidebar: [
       {
-        text: 'เว็บไซต์ Microtronic.biz (Next.js Commerce)',
+        text: '📋 แผนธุรกิจ 7 แผ่น (อัปเดต 6 ต.ค. 2569)',
         items: [
-          { text: 'Milestone & Planning', link: '/ask' },
+          { text: '1 · โปรไฟล์บริษัท', link: '/1-company-profile' },
+          { text: '2 · Business Model Canvas', link: '/2-business-model-canvas' },
+          { text: '3 · ตลาดและคู่แข่ง', link: '/3-market-competitor' },
+          { text: '4 · สินค้าและราคา', link: '/4-products-pricing' },
+          { text: '5 · แผนส่งเสียง (Visibility)', link: '/5-visibility-plan' },
+          { text: '6 · Roadmap 12 สัปดาห์', link: '/6-roadmap-12-weeks' },
+          { text: '7 · Action Calendar', link: '/7-action-calendar' },
+        ]
+      },
+      {
+        text: '📚 เอกสารอ้างอิง (ฉบับเต็ม)',
+        items: [
+          { text: 'โปรไฟล์บริษัท (ฉบับเต็ม)', link: '/company-profile' },
+          { text: 'แคตตาล็อกผลิตภัณฑ์', link: '/product-catalog' },
+          { text: 'กลยุทธ์ราคา (Pricing)', link: '/pricing-strategy' },
+          { text: 'วิเคราะห์คู่แข่ง', link: '/competitor-analysis' },
+        ]
+      },
+      {
+        text: '⚙️ ระบบภายใน & กฎ',
+        items: [
+          { text: 'Business Rules', link: '/business-rules' },
+          { text: 'Decisions Log', link: '/decisions-log' },
           { text: 'Technical Planning', link: '/web-development-planning' },
           { text: 'Site Structure (App Router)', link: '/webStructure' },
-          { text: 'Security & Auth', link: '/add-security_system' },
-          { text: 'To-Do List', link: '/To-do-List' },
         ]
       },
       {
-        text: 'ระบบ Micro-Account (Internal)',
-        items: [
-          { text: 'Architecture', link: '/architecture' },
-          { text: 'Business Rules', link: '/business-rules' },
-          { text: 'Operations Runbook', link: '/operations-runbook' },
-          { text: 'Decisions Log', link: '/decisions-log' },
-        ]
-      },
-      {
-        text: 'ฮาร์ดแวร์ & Infrastructure',
-        items: [
-          { text: 'Hardware Infrastructure', link: '/hardware-infrastructure' },
-          { text: 'NUC7JY — Bitcoin Full Node', link: '/NUC7JY' },
-          { text: 'Optiplex 7040 — LND Node', link: '/Optiplex7040' },
-        ]
-      },
-      {
-        text: 'Google Workspace Business Plus',
+        text: '💼 Google Workspace Business Plus',
         items: [
           { text: 'Apps Inventory & Usage', link: '/google-workspace-usage' },
           { text: 'Automation Scripts', link: '/gws-automation' },
         ]
       },
       {
-        text: 'บันทึกการประชุม',
+        text: '📁 อื่น ๆ',
         items: [
-          { text: 'Day 1 — Business Context', link: '/day1' },
-          { text: 'Day 2 — Technical Deep Dive', link: '/day2' },
-          { text: 'Day 2 Summary', link: '/day2-summary' },
+          { text: 'External Drive Structure', link: '/external' },
+          { text: 'ไฟล์เก่า (Archive)', link: '/archive/' },
         ]
       },
-      {
-        text: 'External Drive Structure',
-        items: [
-          { text: 'Folder Structure', link: '/external' },
-        ]
-      }
     ],
     search: { provider: 'local' },
     footer: {

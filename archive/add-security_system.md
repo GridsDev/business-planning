@@ -1,7 +1,7 @@
 # Security & Auth System — ข้อเสนอสำหรับ Lightning/IoT Stack
 
 > 🔴 **สถานะ: ข้อเสนอ (PROPOSED) — ยังไม่มีหลักฐานว่านำไปใช้จริง**
-> ⚠️ **คนละโปรเจกต์กับ Micro-Account** — ระบบบัญชีมี auth ของตัวเอง ดู [Architecture](/architecture)
+> ⚠️ **คนละโปรเจกต์กับ Micro-Account** — ระบบบัญชีมี auth ของตัวเอง ดู [Architecture](/archive/architecture)
 > เอกสารนี้เก็บรายละเอียด Docker Compose ฉบับเต็มไว้ เพื่อให้ตรวจสอบ/นำไปปรับใช้ภายหลังได้
 
 ---
@@ -513,11 +513,11 @@ networks:
 ---
 
 ## 🔗 Related Documents
-- [To-Do List](/To-do-List) — ลำดับความสำคัญ
-- [Day 2](/day2) — บริบทสถาปัตยกรรม
-- [Hardware Infrastructure](/hardware-infrastructure) — เครื่องจริง
-- [Optiplex 7040](/Optiplex7040) — ที่รัน LND
-- [Architecture](/architecture) — ข้อขัดแย้งเรื่อง Auth (Micro-Account)
+- [To-Do List](/archive/To-do-List) — ลำดับความสำคัญ
+- [Day 2](/archive/day2) — บริบทสถาปัตยกรรม
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — เครื่องจริง
+- [Optiplex 7040](/archive/Optiplex7040) — ที่รัน LND
+- [Architecture](/archive/architecture) — ข้อขัดแย้งเรื่อง Auth (Micro-Account)
 - [Decisions Log](/decisions-log) — นโยบาย Google-First
 
 ---

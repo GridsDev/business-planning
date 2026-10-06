@@ -1,7 +1,7 @@
 # To-Do List — งานค้างของ Lightning / IoT Stack
 
 > 🔴 **ขอบเขต**: รายการนี้เป็นงานของ **Lightning/IoT stack** (Day 2) — **ไม่ใช่** Micro-Account
-> ดู [Business Rules](/business-rules) และ [Operations Runbook](/operations-runbook) สำหรับงานของระบบบัญชี
+> ดู [Business Rules](/business-rules) และ [Operations Runbook](/archive/operations-runbook) สำหรับงานของระบบบัญชี
 > ⚠️ รายการทั้งหมดมาจากแผนที่วางไว้ — **ยังไม่มีหลักฐานว่าอันใดเสร็จ**
 
 ---
@@ -20,7 +20,7 @@
 
 ## 1️⃣ ความปลอดภัยพื้นฐานและ Authentication
 
-> 🔴 **สำคัญสูงสุดอันดับ 1** — รายละเอียดฉบับเต็มที่ [Security & Auth](/add-security_system)
+> 🔴 **สำคัญสูงสุดอันดับ 1** — รายละเอียดฉบับเต็มที่ [Security & Auth](/archive/add-security_system)
 
 | # | งาน | สถานะ | หมายเหตุ |
 |---|-----|--------|----------|
@@ -50,7 +50,7 @@
 
 > 🚫 **ไม่ต้องรีบ**: ยังไม่มีการตัดสินใจเรื่อง auth (ยกเลิก 2026-09-26)
 > รายการนี้ผูกกับข้อ 1.4 ซึ่งพักไว้ — ทำข้อ 1.1–1.3 (ปิดช่องโหว่จริง) ก่อน
-> ดู [Security & Auth](/add-security_system) และ [Architecture](/architecture)
+> ดู [Security & Auth](/archive/add-security_system) และ [Architecture](/archive/architecture)
 
 ---
 
@@ -88,7 +88,7 @@
 
 > **เหตุผล**: เตรียมพร้อมเทคโนโลยีแห่งอนาคต เพิ่มจุดเด่นให้แพลตฟอร์ม
 
-> 📌 **ต้องตรวจก่อน**: เครื่องมี GPU หรือไม่? 🚫 ไม่มีข้อมูลสเปก (ดู [Hardware Infrastructure](/hardware-infrastructure))
+> 📌 **ต้องตรวจก่อน**: เครื่องมี GPU หรือไม่? 🚫 ไม่มีข้อมูลสเปก (ดู [Hardware Infrastructure](/archive/hardware-infrastructure))
 
 ---
 
@@ -101,17 +101,17 @@
 | A | **เก็บสำรอง LND `chain_sync.db` + macaroons + `tls.cert` แยกจากเครื่อง** | ถ้าเครื่องเสีย = ทุน Lightning หายถาวร |
 | B | **เก็บสำรอง NUC7JY (Bitcoin blockchain data)** | เสียเวลา sync ใหม่หลายวัน |
 | C | **ทดสอบ restore จาก backup** | backup ที่ไม่ restore ได้ = ไม่มี backup |
-| D | **กำหนด port ที่เปิดออกสู่ภายนอก + Firewall** | ดู [Hardware Infrastructure](/hardware-infrastructure) |
+| D | **กำหนด port ที่เปิดออกสู่ภายนอก + Firewall** | ดู [Hardware Infrastructure](/archive/hardware-infrastructure) |
 | E | **หมุนรอบ credential** (LND macaroon, Postgres password, LNbits admin key) | credential รั่วต้องหมุนได้ |
 | F | **ตรวจสอบสถานะจริงของ service ทุกตัว** (`docker ps`) | ปัจจุบันหลายรายการเป็น "ยังไม่ยืนยัน" |
 
 ---
 
 ## 🔗 Related Documents
-- [Security & Auth](/add-security_system) — รายละเอียดข้อ 1
-- [Day 2](/day2) — บริบทสถาปัตยกรรม
-- [Hardware Infrastructure](/hardware-infrastructure) — สถานะเครื่องจริง
-- [Architecture](/architecture) — ข้อขัดแย้งเรื่อง Auth
+- [Security & Auth](/archive/add-security_system) — รายละเอียดข้อ 1
+- [Day 2](/archive/day2) — บริบทสถาปัตยกรรม
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — สถานะเครื่องจริง
+- [Architecture](/archive/architecture) — ข้อขัดแย้งเรื่อง Auth
 - [Decisions Log](/decisions-log) — นโยบาย Google-First
 
 ---

@@ -423,10 +423,10 @@ jobs:
 
 ## 📚 Related Documents
 - [Site Structure](/webStructure) — Routes, File Structure, Components
-- [Security & Auth](/add-security_system) — Detailed Auth, RBAC, Middleware
-- [Milestone Planning](/ask) — Timeline, Deliverables
-- [Micro-Account Architecture](/architecture) — Internal System Patterns
-- [Day 1 Business Context](/day1) — Decisions & Rationale
+- [Security & Auth](/archive/add-security_system) — Detailed Auth, RBAC, Middleware
+- [Milestone Planning](/archive/ask) — Timeline, Deliverables
+- [Micro-Account Architecture](/archive/architecture) — Internal System Patterns
+- [Day 1 Business Context](/archive/day1) — Decisions & Rationale
 
 ---
 

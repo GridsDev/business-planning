@@ -143,7 +143,7 @@
 - [Web Development Planning](/web-development-planning) — แผนพัฒนาเชิงเทคนิค
 - [Company Profile](/company-profile) — โปรไฟล์บริษัท (ปัจจุบัน)
 - [Competitor Analysis](/competitor-analysis) — สำรวจตลาด 2026-09-26
-- [Ask](/ask) — Milestone ปัจจุบัน
+- [Ask](/archive/ask) — Milestone ปัจจุบัน
 
 ---
 

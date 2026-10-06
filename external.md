@@ -82,10 +82,10 @@
 ---
 
 ## 🔗 Related Documents
-- [Hardware Infrastructure](/hardware-infrastructure) — ภาพรวมเครื่อง
-- [Day 2](/day2) — บริบทโปรเจกต์
-- [Security & Auth](/add-security_system) — คำเตือนเรื่อง `.env`
-- [Optiplex 7040](/Optiplex7040) — เครื่องที่รันบริการ
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — ภาพรวมเครื่อง
+- [Day 2](/archive/day2) — บริบทโปรเจกต์
+- [Security & Auth](/archive/add-security_system) — คำเตือนเรื่อง `.env`
+- [Optiplex 7040](/archive/Optiplex7040) — เครื่องที่รันบริการ
 
 ---
 

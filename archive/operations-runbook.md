@@ -155,7 +155,7 @@ npm test
 ---
 
 ## 🔗 Related Documents
-- [Architecture](/architecture)
+- [Architecture](/archive/architecture)
 - [Business Rules](/business-rules) — กฎ PDF Evidence First
 - [Decisions Log](/decisions-log)
 - [Pricing Strategy](/pricing-strategy)

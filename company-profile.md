@@ -183,7 +183,7 @@
 > - `docs/ARCHITECTURE.md` เขียนว่า DB = **Neon** แต่ `package.json` ติดตั้ง **@vercel/postgres** → ต้องยืนยันว่าใช้ตัวไหนจริง
 > - `docs/ARCHITECTURE.md` เขียนว่า Auth = **NextAuth** แต่ `package.json` **ไม่มี next-auth** → ใช้ Google OAuth + jose จริง → ต้องแก้เอกสาร
 
-> รายละเอียด: [Architecture](/architecture) · [Business Rules](/business-rules) · [Operations Runbook](/operations-runbook) · [Decisions Log](/decisions-log)
+> รายละเอียด: [Architecture](/archive/architecture) · [Business Rules](/business-rules) · [Operations Runbook](/archive/operations-runbook) · [Decisions Log](/decisions-log)
 
 ---
 
@@ -196,7 +196,7 @@
 | Docker Network | `local-Network-Dev` (เชื่อม LND, PostgreSQL, PgAdmin, Discourse, API) | ✅ `Optiplex7040.md` | ✅ ยืนยัน |
 | OS | Ubuntu 24.04 | ⚠️ `day2-summary.md` ระบุว่าผู้ใช้ทำงานบน Ubuntu 24.04 | ⚠️ ยืนยันเครื่องต่อเครื่อง |
 
-> รายละเอียด: [Hardware Infrastructure](/hardware-infrastructure) · [NUC7JY](/NUC7JY) · [Optiplex 7040](/Optiplex7040)
+> รายละเอียด: [Hardware Infrastructure](/archive/hardware-infrastructure) · [NUC7JY](/archive/NUC7JY) · [Optiplex 7040](/archive/Optiplex7040)
 
 ---
 
@@ -290,9 +290,9 @@
 - [Product Catalog](/product-catalog) — สินค้าและบริการ (มีส่วนที่ยังต้องยืนยัน)
 - [Pricing Strategy](/pricing-strategy) — โมเดลราคา markup 25%
 - [Competitor Analysis](/competitor-analysis) — วิเคราะห์คู่แข่ง
-- [Hardware Infrastructure](/hardware-infrastructure) — เครื่องและระบบ
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — เครื่องและระบบ
 - [Google Workspace Usage](/google-workspace-usage) — แอปในสิทธิ์
-- [Operations Runbook](/operations-runbook) — ขั้นตอนทำงาน/กู้คืน
+- [Operations Runbook](/archive/operations-runbook) — ขั้นตอนทำงาน/กู้คืน
 - [Business Rules](/business-rules) — กฎบัญชี/ภาษี
 - [Decisions Log](/decisions-log) — บันทึกการตัดสินใจ
 

@@ -924,10 +924,10 @@ microtronic-web/
 
 ## 🔗 Related Documents
 - [Technical Planning](/web-development-planning) — Architecture, Patterns, Conventions
-- [Security & Auth](/add-security_system) — RBAC, Middleware, API Protection
-- [Milestone Planning](/ask) — Timeline, Deliverables
-- [Hardware Infrastructure](/hardware-infrastructure) — Deployment Targets
-- [To-Do List](/To-do-List) — Implementation Tasks
+- [Security & Auth](/archive/add-security_system) — RBAC, Middleware, API Protection
+- [Milestone Planning](/archive/ask) — Timeline, Deliverables
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — Deployment Targets
+- [To-Do List](/archive/To-do-List) — Implementation Tasks
 
 ---
 

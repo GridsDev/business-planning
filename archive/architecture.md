@@ -148,7 +148,7 @@
 
 ## 🔗 Related Documents
 - [Business Rules](/business-rules) — กฎบัญชี/ภาษี
-- [Operations Runbook](/operations-runbook) — ขั้นตอน deploy/กู้คืน
+- [Operations Runbook](/archive/operations-runbook) — ขั้นตอน deploy/กู้คืน
 - [Decisions Log](/decisions-log) — การตัดสินใจ
 - [Company Profile](/company-profile)
 

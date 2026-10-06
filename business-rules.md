@@ -163,8 +163,8 @@
 ---
 
 ## 🔗 Related Documents
-- [Architecture](/architecture) — โครงสร้างระบบ
-- [Operations Runbook](/operations-runbook) — ขั้นตอนทำงาน
+- [Architecture](/archive/architecture) — โครงสร้างระบบ
+- [Operations Runbook](/archive/operations-runbook) — ขั้นตอนทำงาน
 - [Decisions Log](/decisions-log) — การตัดสินใจ
 - [Pricing Strategy](/pricing-strategy) — ราคา markup 25%
 

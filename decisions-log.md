@@ -291,8 +291,21 @@
 
 ---
 
+## 2026-10-06 — โครงสร้างแผนธุรกิจใหม่ 7 ไฟล์ + ราคาแพ็กเกจเว็บ
+
+| หัวข้อ | รายละเอียด |
+|--------|-----------|
+| **Context** | เอกสารเดิมเขียน 26 ก.ย. 2569 กระจาย 24 ไฟล์ · พี่ฆังสั่งเขียนแผนใหม่ทั้งหมดลงโครง 7 ไฟล์หลัก + เก็บไฟล์ IoT 11 ไฟล์เข้า `archive/` |
+| **Decision** | **1)** แผนหลัก = 7 ไฟล์: 1-company-profile · 2-business-model-canvas · 3-market-competitor · 4-products-pricing · 5-visibility-plan · 6-roadmap-12-weeks · 7-action-calendar<br>**2)** **ราคาแพ็กเกจเว็บสำหรับ SME = 15,000–30,000 บาท/งาน** (ยืนยันจากพี่ฆังโดยตรง)<br>**3)** BMC ใช้โครง 4 มิติ (Who/What/How/Money) + เติม Customer Relationships · Channels · Revenue · Key Partners ตามที่พี่ฆังสั่ง |
+| **Implementation notes** | ไฟล์เดิม (company-profile, product-catalog, pricing-strategy, competitor-analysis) คงไว้เป็นเอกสารอ้างอิง · config.ts อัปเดต nav/sidebar แล้ว · ราคาเว็บใส่ BMC + 4-products-pricing |
+| **Why** | แผนเดิมกระจัดกระจาย ไม่มีภาพเดียวที่นำไปลงปฏิทินได้ — 7 ไฟล์ครอบคลุมครบวงจร ตั้งแต่ "เราเป็นใคร" ถึง "ตารางลง Calendar" |
+| **Impacted** | เอกสารแผนธุรกิจทั้งหมด · `config.ts` · แผนลง Google Calendar `business` (ยังรอวันเริ่ม 12 สัปดาห์จากพี่ฆัง) |
+| **Rollback** | โครงเดิมยังอยู่ครบ (ไฟล์ไม่ได้ลบ) — ย้อนได้โดยใช้ไฟล์เดิมเป็นหลัก |
+
+---
+
 ## 🔗 Related Documents
-- [Operations Runbook](/operations-runbook) — Monthly Billing Dominick
+- [Operations Runbook (archive)](/archive/operations-runbook) — Monthly Billing Dominick
 - [Business Rules](/business-rules) — กฎ PDF Evidence First + reverse charge ×7%
 - [Pricing Strategy](/pricing-strategy) — ตัวเลข markup 25%
 - [Google Workspace Usage](/google-workspace-usage) — ต้นทุน Google-First

@@ -117,7 +117,7 @@
 
 ## 🔗 Related Documents
 - [Google Workspace Usage](/google-workspace-usage) — รายการแอป + scope
-- [Operations Runbook](/operations-runbook) — ตารางงาน
+- [Operations Runbook](/archive/operations-runbook) — ตารางงาน
 - [Business Rules](/business-rules)
 - [Decisions Log](/decisions-log) — นโยบาย Google-First
 

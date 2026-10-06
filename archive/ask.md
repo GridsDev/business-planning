@@ -41,7 +41,7 @@
 - [ ] **Tooling**: Git (GitHub), Project Board, CI/CD (GitHub Actions), Docker Compose
 - [ ] **Database**: PostgreSQL Schema (Products, Orders, Users, Content)
 - [ ] **Preliminary Sitemap**: [Draft](/webStructure)
-- [ ] **Goals & Audience**: Confirmed in [Day 1](/day1)
+- [ ] **Goals & Audience**: Confirmed in [Day 1](/archive/day1)
 
 ### Technical Decisions
 | Decision | Choice | Rationale |
@@ -273,9 +273,9 @@
 ## 🔗 Related Documents
 - [Technical Planning](/web-development-planning) — Stack, Patterns, Conventions
 - [Site Structure](/webStructure) — Routes, Components, File Structure
-- [Security & Auth](/add-security_system) — RBAC, Middleware, API Protection
-- [To-Do List](/To-do-List) — Actionable Tasks
-- [Day 1 Context](/day1) — Business Analysis & Decisions
+- [Security & Auth](/archive/add-security_system) — RBAC, Middleware, API Protection
+- [To-Do List](/archive/To-do-List) — Actionable Tasks
+- [Day 1 Context](/archive/day1) — Business Analysis & Decisions
 
 ---
 

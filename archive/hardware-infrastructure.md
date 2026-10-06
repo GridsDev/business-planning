@@ -80,7 +80,7 @@
 | **Bitcoin Core version** | 🚫 ไม่มีข้อมูล |
 | **สถานะ sync** | 🚫 ไม่มีข้อมูล |
 
-> 📄 ดู [NUC7JY](/NUC7JY) — ไฟล์นี้ยังว่างเปล่าในต้นฉบับ ต้องเก็บข้อมูลจริงก่อน
+> 📄 ดู [NUC7JY](/archive/NUC7JY) — ไฟล์นี้ยังว่างเปล่าในต้นฉบับ ต้องเก็บข้อมูลจริงก่อน
 
 ---
 
@@ -93,7 +93,7 @@
 | **วิธีสร้าง** | Docker Compose ของแต่ละบริการ | ✅ ยืนยัน |
 
 > จาก `To-do-List.md` / `day2-summary.md` (เดิม) มีการวางแผนเพิ่ม: **Mosquitto (MQTT)**, **Node-RED**, **Prometheus + Grafana + cAdvisor**, **WireGuard**
-> ⚠️ สถานะการทำจริงยังไม่ยืนยัน — ดู [To-Do List](/To-do-List)
+> ⚠️ สถานะการทำจริงยังไม่ยืนยัน — ดู [To-Do List](/archive/To-do-List)
 
 ---
 
@@ -148,10 +148,10 @@
 ---
 
 ## 🔗 Related Documents
-- [NUC7JY](/NUC7JY) — Bitcoin Full Node
-- [Optiplex 7040](/Optiplex7040) — LND Node
+- [NUC7JY](/archive/NUC7JY) — Bitcoin Full Node
+- [Optiplex 7040](/archive/Optiplex7040) — LND Node
 - [External Drive Structure](/external)
-- [Security & Auth](/add-security_system) — ความปลอดภัย
+- [Security & Auth](/archive/add-security_system) — ความปลอดภัย
 - [Company Profile](/company-profile)
 
 ---

@@ -391,7 +391,7 @@ Next.js 16 (App Router) · React 19 · TypeScript 5 · Tailwind CSS 4 · `@verce
 - [Pricing Strategy](/pricing-strategy) — โมเดลราคา markup 25%
 - [Competitor Analysis](/competitor-analysis)
 - [Business Rules](/business-rules) — กฎบัญชี/ภาษี
-- [Operations Runbook](/operations-runbook) — ขั้นตอนทำงาน
+- [Operations Runbook](/archive/operations-runbook) — ขั้นตอนทำงาน
 
 ---
 

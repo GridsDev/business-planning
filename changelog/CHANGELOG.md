@@ -9,6 +9,42 @@
 
 ---
 
+## 6 ต.ค. 2569
+
+### เขียนแผนธุรกิจใหม่ทั้งหมด — โครง 7 ไฟล์หลัก (สรุปผล)
+
+**ขอบเขต (พี่ฆังอนุมัติ):** โครง 7 ไฟล์ + ย้ายไฟล์ IoT เข้า archive/ + ตัวเลขราคาเว็บใหม่
+
+**สิ่งที่ทำครั้งนี้ (หลังจากย้าย archive 11 ไฟล์แล้ว):**
+
+| # | ไฟล์ | บรรทัด | ยืนยันบนดิสก์ |
+|---|------|--------|--------------|
+| — | `README.md` (เขียนก่อนหน้า) | 59 | ✅ |
+| 1 | `1-company-profile.md` | 258 | ✅ test -f + wc -l |
+| 2 | `2-business-model-canvas.md` | 125 | ✅ |
+| 3 | `3-market-competitor.md` | 91 | ✅ |
+| 4 | `4-products-pricing.md` | 150 | ✅ |
+| 5 | `5-visibility-plan.md` | 69 | ✅ |
+| 6 | `6-roadmap-12-weeks.md` | 82 | ✅ |
+| 7 | `7-action-calendar.md` | 86 | ✅ |
+
+**เนื้อหาสำคัญ:**
+- **BMC (ไฟล์ 2):** โครง 4 มิติ Who/What/How/Money + เติม 4 จุดตามพี่ฆังสั่ง (Customer Relationships ตอบ 1–2 ชม. · Channels เรียง LINE OA→เว็บ→GBP→FB→Event · Revenue ตัวเลขจริง · Key Partners ระบุความสัมพันธ์ Noventiq/Vercel/LINE)
+- **ราคา:** แพ็กเกจเว็บ **15,000–30,000 บ./งาน** (ยืนยันจากพี่ฆัง 6 ต.ค.) ใส่ BMC + ไฟล์ 4
+- **ไม่ใช้ claim ที่ไม่มีหลักฐาน:** "เร็วกว่า 2.5 เท่า" ถูกตัด · Core Web Vitals = เป้าที่ต้องวัดก่อนอ้าง
+
+**แก้ config + ลิงก์:**
+- `.vitepress/config.ts` — nav/sidebar ใหม่: กลุ่ม "แผนธุรกิจ 7 แผ่น" + เอกสารอ้างอิง + ตัดลิงก์ไฟล์ที่ย้ายเข้า archive แล้ว
+- แก้ลิงก์ตาย 83 จุด ใน 20 ไฟล์ (ชี้ `/archive/...` ครบ — เหลือ 0)
+
+**แก้ไขไฟล์เดิมเพิ่ม:** `decisions-log.md` +1 entry (โครง 7 ไฟล์ + ราคา 15,000–30,000) · Related Docs ของ decisions-log ชี้ `/archive/operations-runbook`
+
+**ผล build:** `npm run build` ✅ ผ่าน 6.99s (warnings เดิม = syntax highlighting ปกติ)
+
+**ยังไม่ทำ:** commit / push (remote = GitHub → พี่ฆัง push เอง) · ยังไม่ลง Google Calendar — **รอพี่ฆังบอกวันเริ่ม 12 สัปดาห์ + รูปแบบ event**
+
+---
+
 ## 3 ต.ค. 2569
 
 ### แก้ Vercel build — `No Output Directory named "dist" found`

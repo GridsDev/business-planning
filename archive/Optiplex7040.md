@@ -18,7 +18,7 @@
 | **Node.js API** | Backend — เชื่อม LND + PostgreSQL | `local-Network-Dev` |
 
 ### ความเชื่อมโยง
-- **LND** → เชื่อมต่อ **Bitcoin Full Node บน NUC7JY** ([NUC7JY](/NUC7JY))
+- **LND** → เชื่อมต่อ **Bitcoin Full Node บน NUC7JY** ([NUC7JY](/archive/NUC7JY))
 - **Node.js API** → เชื่อมต่อ **LND** และ **PostgreSQL** ผ่าน `local-Network-Dev`
 
 ---
@@ -137,17 +137,17 @@ docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}'
 
 </div>
 
-> 📌 ผลลัพธ์คำสั่งเหล่านี้ควรนำไปอัปเดตใน [Hardware Infrastructure](/hardware-infrastructure)
+> 📌 ผลลัพธ์คำสั่งเหล่านี้ควรนำไปอัปเดตใน [Hardware Infrastructure](/archive/hardware-infrastructure)
 > เพื่อแทนที่สถานะ "ยังไม่ยืนยัน" ด้วยข้อมูลจริง
 
 ---
 
 ## 🔗 Related Documents
-- [NUC7JY](/NUC7JY) — Bitcoin full node ที่ LND เชื่อมต่อ
-- [Hardware Infrastructure](/hardware-infrastructure) — ภาพรวมทั้งระบบ
+- [NUC7JY](/archive/NUC7JY) — Bitcoin full node ที่ LND เชื่อมต่อ
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — ภาพรวมทั้งระบบ
 - [External Drive](/external) — โครงสร้าง `lightning-web-project`
-- [Security & Auth](/add-security_system) — เอกสารประกอบ Docker Compose
-- [To-Do List](/To-do-List) — งานค้างด้านความปลอดภัย
+- [Security & Auth](/archive/add-security_system) — เอกสารประกอบ Docker Compose
+- [To-Do List](/archive/To-do-List) — งานค้างด้านความปลอดภัย
 
 ---
 

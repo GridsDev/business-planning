@@ -16,10 +16,10 @@
 
 ## 🎯 บริบท
 
-พี่ฆังกำลังออกแบบแพลตฟอร์ม **LNbits / Lightning Network + IoT** โดยใช้ Docker Compose เป็นแกนกลาง บนเครื่อง Optiplex 7040 (ดู [Hardware Infrastructure](/hardware-infrastructure))
+พี่ฆังกำลังออกแบบแพลตฟอร์ม **LNbits / Lightning Network + IoT** โดยใช้ Docker Compose เป็นแกนกลาง บนเครื่อง Optiplex 7040 (ดู [Hardware Infrastructure](/archive/hardware-infrastructure))
 
 > 📌 **โปรเจกต์นี้แยกจาก Micro-Account** (ระบบบัญชี/ภาษี) และแยกจากเว็บ Microtronic
-> ดู [Architecture](/architecture) สำหรับสถาปัตยกรรมของเว็บบัญชี
+> ดู [Architecture](/archive/architecture) สำหรับสถาปัตยกรรมของเว็บบัญชี
 
 ---
 
@@ -46,7 +46,7 @@
 | Container | `iot_mosquitto` |
 | Network | `iot_network` |
 | Volumes | `./mosquitto/config` (ro) · `./mosquitto/data` · `./mosquitto/log` |
-| ⚠️ ค่าเริ่มต้นเดิม | `allow_anonymous true` — **ต้องปิด** ดู [Security](/add-security_system) |
+| ⚠️ ค่าเริ่มต้นเดิม | `allow_anonymous true` — **ต้องปิด** ดู [Security](/archive/add-security_system) |
 
 ### Node-RED
 | หัวข้อ | ค่า |
@@ -102,7 +102,7 @@
 > 🚫 **2026-09-26 — พี่ฆังยกเลิกการตัดสินใจเรื่อง auth stack ของ Lightning/IoT**
 > เอกสารนี้จึงบันทึก Firebase Auth / NextAuth / Google OAuth ไว้ **เฉพาะในฐานะข้อเสนอจากบทสนทนาเดิม**
 > ไม่ต้องเปรียบเทียบ ไม่ต้องยืนยันต้นทุน Blaze plan / consent screen / เงื่อนไข Noventiq
-> → ดู [Decisions Log](/decisions-log) และ [To-Do List](/To-do-List)
+> → ดู [Decisions Log](/decisions-log) และ [To-Do List](/archive/To-do-List)
 
 ---
 
@@ -150,7 +150,7 @@
 > 🔴 **ข้อขัดแย้งสำคัญ**: บทสนทนานี้แนะนำ **NextAuth.js** และ **Firebase Auth**
 > แต่โปรเจกต์ **Micro-Account** ใช้ `@react-oauth/google` + `jose` + `bcryptjs` (ไม่มี `next-auth`)
 > และ `Micro-Account/docs/ARCHITECTURE.md` ระบุ **NextAuth** — สามทางไม่ตรงกัน
-> → ต้องตัดสินใจข้ามโปรเจกต์ ดู [Architecture](/architecture)
+> → ต้องตัดสินใจข้ามโปรเจกต์ ดู [Architecture](/archive/architecture)
 
 ---
 
@@ -166,17 +166,17 @@
 การเชื่อมข้ามไฟล์ด้วย **External Network**: `docker network create shared_app_network` แล้วตั้ง `external: true` ในทุกไฟล์
 
 > ⚠️ **สถานะ**: นี่คือ **ข้อเสนอ** — ไม่ได้ยืนยันว่าแยกไฟล์ตามนี้จริง
-> สิ่งที่ยืนยันคือ Optiplex 7040 ใช้ **network เดียว** ชื่อ `local-Network-Dev` ดู [Hardware Infrastructure](/hardware-infrastructure)
+> สิ่งที่ยืนยันคือ Optiplex 7040 ใช้ **network เดียว** ชื่อ `local-Network-Dev` ดู [Hardware Infrastructure](/archive/hardware-infrastructure)
 
 ---
 
 ## 🔗 Related Documents
-- [Day 1](/day1) — บันทึกก่อนหน้า (เว็บ Microtronic)
-- [Security & Auth](/add-security_system) — ข้อเสนอด้านความปลอดภัยฉบับเต็ม
-- [Hardware Infrastructure](/hardware-infrastructure) — เครื่องที่ใช้จริง
+- [Day 1](/archive/day1) — บันทึกก่อนหน้า (เว็บ Microtronic)
+- [Security & Auth](/archive/add-security_system) — ข้อเสนอด้านความปลอดภัยฉบับเต็ม
+- [Hardware Infrastructure](/archive/hardware-infrastructure) — เครื่องที่ใช้จริง
 - [External Drive Structure](/external) — โครงสร้าง `lightning-web-project`
-- [To-Do List](/To-do-List) — งานค้าง
-- [Architecture](/architecture) — สถาปัตยกรรม Micro-Account (คนละโปรเจกต์)
+- [To-Do List](/archive/To-do-List) — งานค้าง
+- [Architecture](/archive/architecture) — สถาปัตยกรรม Micro-Account (คนละโปรเจกต์)
 
 ---
 
