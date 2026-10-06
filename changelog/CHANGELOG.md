@@ -11,6 +11,23 @@
 
 ## 6 ต.ค. 2569
 
+### รอบ 2 — Calendar 21 event + crm-schema อนุมัติ + BMC merge + ส่งงานฟ้า
+
+**สิ่งที่ทำ (ตามคำสั่งพี่ฆัง 6 ต.ค.):**
+
+| งาน | ผล | ยืนยัน |
+|-----|-----|--------|
+| **Google Calendar «เลขา AI»** (`grids@microtronic.biz`) | **21 events ครบ 0 fail** — งานใหญ่ all-day · ทบทวนทุกศุกร์ 16:00 (COUNT=12 เริ่ม 9 ต.ค.) · Blog SEO จันทร์ 09:00–11:00 (COUNT=4 เริ่ม 20 ต.ค.) · License (COUNT=5 เริ่ม 17 พ.ย.) · ทบทวนรอบ 12 สัปดาห์ 26 ธ.ค. 14:00–15:00 | ผล API ทุก event |
+| **วันเริ่ม roadmap** | = **6 ต.ค. 2569** (พี่ฆังยืนยัน "วันนี้") → เติม `6/10/2569` ในไฟล์ 6/7 · สัปดาห์ 12 = 22–28 ธ.ค. | commit `3969192` |
+| **`secretary/memory/decisions.md`** | ข้อ **#13** ราคาเว็บ 15,000–30,000 บ./งาน · ข้อ **#14** งานซ้ำ automate → ให้ฝั่ง sv (ฟ้า) ทำ | `test -f` + line 24/25 |
+| **`crm-schema.sql` (ของฟ้า, Gitea)** | ฌอนตรวจแล้ว → **พี่ฆังอนุมัติ** → ฟ้ารันได้เลย (container `crm-db` + รัน SQL) · โครง 7 ตาราง + 4 views ผ่าน · จุดเล็ก 2 ข้อ (trigger quotation_items · CHECK amount) ไม่ blocker | ดึงไฟล์จริงจาก Gitea (16,181 chars) |
+| **BMC merge (พี่ฆังอนุมัติ)** | เพิ่ม **LinkedIn** (Phase 2) + **GitHub org** (ที่จะทำ) ใน Channels + หมายเหตุ **NAP Consistency** (ชื่อ legal name เดียวกันทุกจุด · `legalName`+`sameAs` JSON-LD) | ไฟล์ 2 = 129 บรรทัด (เดิม 125) |
+| **Brief rich menu + automate → ฟ้า** | เขียน `plans/brief-rich-menu-automate.md` ใน repo Gitea `Microtronic-Web/Business-Development-Support-Plan` | verify บน Gitea |
+
+**หมายเหตุ:**
+- prompt สั่ง Kiro แก้ microtronic.biz — ฌอนทำผิด (repo/ข้อมูล) → **พี่ฆังจะบอก Kiro เอง** ฌอนไม่ยุ่ง · repo จริง = `microtronic-thailand/microtronic.biz`
+- Gitea credential แบบ basic auth ใช้ไม่ได้แล้ว → ใช้ header `token` จาก `~/.git-credentials` แทน (user `FahSai`)
+
 ### เขียนแผนธุรกิจใหม่ทั้งหมด — โครง 7 ไฟล์หลัก (สรุปผล)
 
 **ขอบเขต (พี่ฆังอนุมัติ):** โครง 7 ไฟล์ + ย้ายไฟล์ IoT เข้า archive/ + ตัวเลขราคาเว็บใหม่

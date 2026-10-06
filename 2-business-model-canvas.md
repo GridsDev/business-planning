@@ -34,7 +34,11 @@
 | 2 | **microtronic.biz** | หน้าร้าน + พิสูจน์ฝีมือด้วยเว็บตัวเอง (Core Web Vitals เป้า 90+) | ✅ มีแล้ว |
 | 3 | **Google Maps / Business Profile** | ให้คนค้น "รับทำเว็บ + ชื่อบริษัท" เจอ | 📋 กำลังทำ (Phase 1) |
 | 4 | **Facebook** | เข้าถึง SME ไทย + กลุ่มธุรกิจ | 📋 Phase 2 |
-| 5 | **Event / Networking** | ปิดงานใหญ่/สร้างสัมพันธ์ระยะยาว | 📋 Phase 3 |
+| 5 | **LinkedIn** | สร้างตัวตนบริษัท/คุยกับ decision-maker องค์กร | 📋 Phase 2 |
+| 6 | **GitHub org** | แสดงผลงาน/โค้ดสาธาร้างาน open-source — สร้างความน่าเชื่อถือกับสายเทคนิค | 📋 ที่จะทำ |
+| 7 | **Event / Networking** | ปิดงานใหญ่/สร้างสัมพันธ์ระยะยาว | 📋 Phase 3 |
+
+> 📌 **NAP Consistency (สำคัญต่อ SEO/GBP):** ชื่อบริษัท (ใช้ชื่อ legal name เดียวกันทุกจุด) · ที่อยู่ · เบอร์โทร **ต้องตรงกันเป๊ะ** ทุกช่องทาง — เว็บ (`legalName` + `sameAs` ใน JSON-LD Schema), Google Business Profile, Facebook, LinkedIn, ไดเรกทอรี — ห้ามมีเวอร์ชันต่างกัน
 
 ---
 
