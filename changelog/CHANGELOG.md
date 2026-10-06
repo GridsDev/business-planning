@@ -11,6 +11,18 @@
 
 ## 7 ต.ค. 2569
 
+### Push ขึ้น Gitea — survey + briefs ทั้งหมด (ฌอน · สั่งโดยพี่ฆัง)
+
+**คำสั่ง:** "push ไป gitea เลย" · remote `gitea` = `http://192.168.1.200:3000/FahSai/business-planning.git` (เพิ่มใหม่ตามที่พี่ฆังให้มา)
+
+| ขั้นตอน | ผล |
+|---------|-----|
+| เพิ่ม remote `gitea` | ✓ (มี origin → GitHub GridsDev เดิม ไม่แตะ) |
+| commit | ไฟล์ทั้ง 3 (3-market-competitor + changelog + plans/) ถูก commit แล้วโดย session `GridsMicro` 01:09 ICT (commit `2c8a4a0`) → ไม่ commit ซ้ำ |
+| push ครั้งแรก | ❌ rejected (fetch first) — gitea มี 2 commit ของฟ้า |
+| rebase `main` บน `gitea/main` | ✓ ไม่มี conflict → HEAD = `7b878f0` |
+| **push gitea main** | ✅ **`7ccd5e1..7b878f0` สำเร็จ** |
+
 ### แก้ path ใน CHANGELOG — ให้ตรงเครื่องจริง (พี่ฆังสั่ง)
 
 | รายการ | ก่อน | หลัง |
