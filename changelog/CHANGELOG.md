@@ -4,12 +4,58 @@
 > สั่งโดยพี่ฆัง เมื่อ 3 ต.ค. 2569
 
 **โปรเจกต์:** เอกสารวางแผนธุรกิจ บริษัท ไมโครทรอนิก จำกัด → เว็บเอกสาร VitePress
-**path:** `/home/neon13/Documents/Default Project/business-planning`
+**path:** `/home/devg/business-planning` *(แก้โดย ฟ้า จาก sv · 7 ต.ค. 2569 — path เดิม `/home/neon13/Documents/Default Project/business-planning` ไม่ใช่เครื่องนี้)*
 **format:** ใหม่สุดอยู่บนสุด · เวลา ICT (UTC+7)
 
 ---
 
 ## 7 ต.ค. 2569
+
+### แก้ path ใน CHANGELOG — ให้ตรงเครื่องจริง (พี่ฆังสั่ง)
+
+| รายการ | ก่อน | หลัง |
+|--------|------|------|
+| **path** บรรทัด 7 | `/home/neon13/Documents/Default Project/business-planning` | **`/home/devg/business-planning`** |
+
+- กำกับไว้ในไฟล์ว่า **"แก้โดย ฟ้า จาก sv · 7 ต.ค. 2569"** พร้อมเก็บ path เดิมไว้ในวงเล็บ
+- **สาเหตุ:** path เดิมชี้เครื่อง/workspace อื่น — เครื่องที่รัน session นี้คือ sv (user `devg`) · ตรวจด้วย `pwd` แล้ว
+- **ยังไม่ทำ:** ยังไม่ commit/push
+
+### Pull GitHub ทับโปรเจกต์ — local ตาม GitHub ทัน (พี่ฆังสั่ง 00:38 ICT)
+
+**คำสั่ง:** `pull https://github.com/GridsDev/business-planning.git มาทับโครงการนี้ได้เลย บน github อัพเดทกว่า`
+
+**ข้อเท็จจริงที่ตรวจจริงก่อนทำ (ไม่ได้เดา):**
+
+| รายการ | ผลที่ตรวจ |
+|--------|-----------|
+| ประวัติ git | **ไม่มี ancestor ร่วมกัน** (unrelated histories) — local 7 commits ใหม่กว่า, GitHub 8 commits ใหม่กว่า |
+| remote `origin` | ชี้ Gitea `192.168.1.200:3000/FahSai/business-planning.git` — **ไม่ได้แก้** |
+| เนื้อหา local ที่ GH ไม่มี | 11 ไฟล์ `.md` (day1, day2, architecture, NUC7JY, Optiplex7040, To-do-List ฯลฯ) — **พบว่า GH ย้ายเข้า `archive/` ครบ 11 ไฟล์** ไม่มีของหาย |
+| ไฟล์ที่เนื้อหาต่างกัน | 13 ไฟล์ — ทิศทางชี้ว่า **GH ใหม่กว่า** (decisions-log, config.ts, README ชี้ `/archive/...` แล้ว) |
+| folder changelog | local มีแค่ `changlog/` (พิมพ์ผิด) · GH มี **`changelog/CHANGELOG.md` ถูกต้อง + ครบกว่า** (มีรายการ 7 ต.ค. แล้ว) |
+| README ฝั่ง local ยาวกว่า 175 บรรทัด | เนื้อหาหลัก (MBSuite/Vessuyan/THOTH, ราคา, Roadmap 8 โครงการ) **ไปอยู่ในไฟล์ 1–7 + product-catalog.md ของ GH ครบแล้ว** |
+
+**สิ่งที่ทำ:**
+
+1. `git fetch https://github.com/GridsDev/business-planning.git` → ดู `FETCH_HEAD`
+2. `git branch backup/local-before-gh-reset` — **เก็บ history เดิมไว้ก่อน** (กันของหาย)
+3. `git reset --hard FETCH_HEAD` → HEAD = `33b1660 update`
+4. `npm install` (เครื่องนี้ไม่มี `node_modules`) + `npm run build` → **ผ่าน** (`build complete in 7.40s`)
+5. `git checkout -- package-lock.json` — npm ลบ field `libc` 42 บรรทัด (noise ของ npm รุ่นนี้) คืนค่าให้ตรง GitHub พอดี
+
+**ผลลัพธ์ที่ตรวจจริง:**
+
+- `git status` → **clean, 0 changes** · HEAD = `33b1660 update`
+- `npm run build` → ✅ ผ่าน
+- โครงสร้างไฟล์ = 7 ไฟล์แผนหลัก + `archive/` 11 ไฟล์ + `changelog/` ครบ
+- ย้อนกลับได้: `git reset --hard backup/local-before-gh-reset`
+
+**ยังไม่ทำ / ต้องตัดสินใจต่อ:**
+
+- **ไม่ได้ push ทั้ง Gitea และ GitHub** — `main` diverge กับ `origin/main` (Gitea) 8 vs 7 commits · ห้าม push ตามกติกา รอพี่ฆังสั่ง
+- **ไม่ได้แก้ remote** — GitHub ยังไม่ได้เพิ่มเป็น remote (ใช้ fetch ตรง URL) ถ้าจะให้ตั้งให้บอกได้
+- README สั้นลงเหลือ 59 บรรทัด — ถ้าอยากได้ส่วน USP/ตารางสถานะยืนยันกลับมา บอกได้ (ของเดิมยังอยู่ที่ branch `backup/local-before-gh-reset`)
 
 ### สำรวจคู่แข่งรับทำเว็บ SME — เติมตลาดวง ② (พี่ฆังสั่ง + อนุมัติ)
 
